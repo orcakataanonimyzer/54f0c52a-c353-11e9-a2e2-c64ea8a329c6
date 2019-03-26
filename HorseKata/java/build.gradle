@@ -1,0 +1,12 @@
+allprojects {
+  apply plugin: 'java'
+  apply plugin: 'jacoco'
+  repositories { 
+    jcenter() 
+  }
+  dependencies {
+    testCompile 'junit:junit:4.12'
+    testCompile 'org.assertj:assertj-core:3.8.0'
+  }
+  test { finalizedBy jacocoTestReport }
+}
