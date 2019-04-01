@@ -1,6 +1,4 @@
-/**
- * the front end provides this data about the requested sort order
- */
+
 class SortMetadata {
     final String columnHeader;
     final String sortOrder;

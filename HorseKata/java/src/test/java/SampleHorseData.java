@@ -2,18 +2,11 @@ import java.util.Arrays;
 import java.util.List;
 
 class SampleHorseData {
-    /**
-     * Sample Horse table headers which you could adapt for your tests.
-     */
+
     static List<String> GetSampleHeaders() {
         return Arrays.asList("Breed", "Colour", "Height", "Age", "Shoes");
     }
 
-    /**
-     * Sample Horse data which you could adapt for your tests. Horses
-     * may have more or less parameters than this and there may be more or less rows
-     * in the table.
-     */
     static List<List<Object>> GetSampleTableData() {
         return Arrays.asList(
                 Arrays.asList("Thoroughbred", "Bay", 1.60, 3, true),
@@ -24,10 +17,6 @@ class SampleHorseData {
         );
     }
 
-    /**
-     * Sample filter metadata that filters on two fields
-     * Breed must equal 'Thoroughbred' and age must equal 3
-     */
     static List<FilterMetadata> GetSampleFilters() {
         return Arrays.asList(
                 new FilterMetadata("Breed", "Thoroughbred"),
@@ -35,18 +24,10 @@ class SampleHorseData {
         );
     }
 
-    /**
-     * Sample sort metadata. You only ever sort on one field.
-     * In this example you should sort by horse height ascending
-     */
     static SortMetadata GetSampleSortMetadata() {
         return new SortMetadata("Height", "Ascending");
     }
 
-    /**
-     * Sample pagination metadata. In this example, each page of data should have 3 rows and
-     * the first record that should be shown on the page is the one at index 1.
-     */
     static PaginationMetadata GetSamplePaginationMetadata() {
         return new PaginationMetadata(1, 3);
     }
